@@ -5,8 +5,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css"/>
+    <script src="script.js"></script>
 </head>
 <body>
     
+    <div class="container">
+        <h1>Welcome to My Website !!</h1>
+        <p>here you can find playlist by clicking the button below:</p>
+        <h1>choose your mood!!</h1>
+        <html>
+<h1 class="title">Choose Your Mood</h1>
+
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Playlist Mood</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="buttons">
+    <button onclick="showSongs('happy')">happy</button>
+    <button onclick="showSongs('sad')">sad</button>
+    <button onclick="showSongs('angry')">angry</button>
+    <button onclick="showSongs('excited')">excited</button>
+  </div>
+
+  <div id="songs"></div>
+
+  <script>
+    function showSongs(mood) {
+      const songsDiv = document.getElementById("songs");
+
+      if (mood === "happy") {
+        songsDiv.innerHTML = `
+          <h2>happy playlist !! </h2>
+          <ul>
+            <li>shakira - she wolf </li>
+            <li>lemon demon - fine </li>
+            <li>olivia rodrigo - bad idea right? </li>
+            <li>katy perry - last friday night </li>
+            <li>justin bieber, ludacris - baby </li>
+            <li>britney spears - toxic </li>
+          </ul>
+        `;
+      }
+
+      if (mood === "sad") {
+        songsDiv.innerHTML = `
+          <h2>sad playlist !! </h2>
+          <ul>
+            <li>billie eilish – happier than ever</li>
+            <li>radiohead - no surprises </li>
+            <li>alex g - mis </li>  
+            <li>adrianne lenker - laf return </li>
+            <li>adrianne lenker - anything </li>
+            <li>the neighbourhood - daddy issues </li>
+            </ul>
+        `;
+      }
+
+      if (mood === "angry") {
+        songsDiv.innerHTML = `
+          <h2>angry playlist !! </h2>
+          <ul>
+            <li>linkin park – numb</li>
+            <li>eminem  – lose yourself</li>
+            <li>olivia rodrigo - brutal </li>
+            <li>olivia rodrigo - good 4 u </li>
+            <li>olivia rodrigo - jealosy, jealosy </li>
+            <li>mindless self indulgence - shut me up </li>
+          </ul>
+        `;
+      }
+
+      if (mood === "excited") {
+        songsDiv.innerHTML = `
+          <h2>excited playlist !! </h2>
+          <ul>
+            <li>lizzo – about damn time</li>
+            <li>lady gaga – judas</li>
+            <li>olivia rodrigo - deja vu </li>
+            <li>tv girl - not allowed </li>
+            <li>echosmith - cool kids </li>
+            <li>lil peep - ghost girl </li>
+          </ul>
+        `;
+      }
+    }
+  </script>
+
+
+<a href="page2.html" class="btn">about</a>
+
+</body>
+</html>
+
+
+</script>
 </body>
 </html>
